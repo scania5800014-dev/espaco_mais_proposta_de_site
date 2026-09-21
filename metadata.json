@@ -1,0 +1,6 @@
+{
+  "name": "Espaço Mais Festa",
+  "description": "Espaço Mais Festa em Balsas, MA: Salão de eventos completo para casamentos, chás revelação e festas inesquecíveis. Piscina, cozinha equipada e ambiente amplo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

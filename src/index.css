@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-neon-pink: #ff2a85;
+    --color-neon-orange: #ff6b00;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #08080f;
+    color: #f4f4f5;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Neon glow utility classes */
+.neon-glow-pink {
+  box-shadow: 0 0 25px -5px rgba(255, 42, 133, 0.5), 0 0 10px rgba(255, 42, 133, 0.3);
+}
+
+.neon-glow-orange {
+  box-shadow: 0 0 25px -5px rgba(255, 107, 0, 0.5), 0 0 10px rgba(255, 107, 0, 0.3);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 12px rgba(255, 42, 133, 0.75);
+}
+
+.neon-text-orange {
+  text-shadow: 0 0 12px rgba(255, 107, 0, 0.75);
+}
+
+.neon-border-gradient {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.3), rgba(255, 107, 0, 0.3));
+  padding: 1px;
+}
+
+.neon-gradient-text {
+  background: linear-gradient(135deg, #ff2a85 0%, #ff6b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism card */
+.glass-panel {
+  background: rgba(18, 18, 28, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s ease;
+}
+.glass-panel-hover:hover {
+  background: rgba(26, 26, 42, 0.85);
+  border-color: rgba(255, 42, 133, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(255, 42, 133, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08080f;
+}
+::-webkit-scrollbar-thumb {
+  background: #252538;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2a85;
+}
